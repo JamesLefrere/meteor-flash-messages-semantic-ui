@@ -1,0 +1,20 @@
+<template name="flashMessages">
+  {{#each messages}} 
+    {{> flashMessageItem}}
+  {{/each}}
+</template>
+
+<template name="flashMessageItem">
+  <div class="{{style}} ui message alert">
+    <i class="close icon"></i>
+    {{# if group }}
+      <ul>
+        {{#each message}}
+          <li>{{{this}}}</li>
+        {{/each}}
+      </ul>
+    {{ else }}
+    <p>{{{message}}}</p>
+    {{/ if }}
+  </div>
+</template>

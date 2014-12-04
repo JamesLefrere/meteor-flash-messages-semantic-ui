@@ -1,0 +1,3 @@
+[submodule "flash-messages"]
+	path = flash-messages
+	url = https://github.com/camilosw/flash-messages
